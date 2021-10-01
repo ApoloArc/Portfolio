@@ -1,0 +1,106 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7rem;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        img{
+            margin: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.logo{
+    img{
+        height: 4rem;
+    }
+}
+
+.hamburguer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    i{
+        color: $mostaza;
+        margin: 1rem;
+        cursor: pointer;
+    }
+    .active{
+        color: white;
+    }
+}
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    position: absolute;
+    background-color: $blanco;
+    padding: 0;
+    margin: 0;
+    color: $blanco;
+    top: 7rem;
+    left: -100rem;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: calc(100vh - 7rem);
+
+    li{
+        list-style: none;
+        cursor: pointer;
+        color: $mostaza;
+        font-size: 2rem;
+        font-weight: $regular;
+        text-transform: uppercase;
+        padding: 1rem;
+        text-align: center;
+    }
+    li:hover{
+        background-color: $dorado--oscuro;
+        color: $blanco;
+    }
+
+    
+}
+.mostrar{
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+@media ( min-width: 1024px){
+
+    .hamburguer{
+        display: none;
+    }
+    .lista{
+        background-color: $negro--intenso;
+        flex-direction: row;
+        left: 0;
+        position: static;
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        ul{
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+            width: 60%;
+            justify-content: center;
+            li{
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,63 @@
+.front--div{
+    width: 100%;
+    height: calc(100vh - 7rem);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    .front--div--text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        h1{
+            font-weight: $bold;
+            text-transform: uppercase;
+            color: $mostaza;
+            font-size: 7rem;
+            margin: 0;
+        }
+        h2{
+            color: $mostaza;
+            font-size: 1.5rem; 
+            margin: 0;
+            font-weight: $regular;
+        }
+    }
+    .front--div--img{
+        height: 45rem;
+        bottom: 0;
+        margin-bottom: 3rem;
+        img{
+            height: 100%;
+        }
+    }
+    .iconos{
+        color: $dorado--claro;
+    }
+}
+
+@media (min-width: 765px)
+{
+    .front--div{   
+        flex-direction: row;
+        .front--div--img{
+            display: flex;
+            justify-content: center;
+            height: 65rem;
+            width: 50%;
+
+        }
+        .front--div--text{
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            h1{
+                font-size: 15rem;
+                
+            }
+        }
+    }
+}
