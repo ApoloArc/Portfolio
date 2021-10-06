@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./build/css/app.css">
     <title>Angelo Mancilla</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header" id="header">
         <div class="logo">
-            <img src="./img/logos/logo--mostaza.png" alt="Logo">
+            <img src="./img/logos/dorado--claro.png" alt="Logo">
         </div>
         <div class="hamburguer" >
             <i id="hamburguer" class="fas fa-bars fa-2x"></i>
@@ -22,7 +24,15 @@
                 <li>Proyectos</li>
                 <li>Contacto</li>
             </ul>
-        </div>  
+        </div>
+        <div class="theme">
+            <input type="checkbox" id="chk" class="checkbox">
+            <label for="chk" class="label">
+                <i class="fas fa-moon moon fa-1x"></i>
+                <i class="fas fa-sun sun fa-1x"></i>
+                <div class="ball" id="ball"></div>
+            </label>
+        </div>
     </header>
 
     <div class="front--div">
@@ -31,16 +41,79 @@
         </div>
         <div class="front--div--text">    
             <h1>Apolo</h1>
+        </div>
+        <div class="front--div--text2">
             <h2>Angelo Mancilla</h2>
             <h2>Front-End Developer</h2>
         </div>
+        <div class="sobre--mi">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus omnis maiores, adipisci doloribus velit, animi vitae cum facilis ex eaque eveniet. Doloremque, perspiciatis inventore. Ullam minima sed tempora reprehenderit!</p>
+        </div>
+        <div class="proyectos">
+            <div class="cards--container">
+                <div class="cards--items">
+                    <div class="card">
+                        <img src="./img/carrusel/1.jpg" alt="Proyecto">
+                        <p>App: Mis Gastos Semanales</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/2.jpg" alt="Proyecto">
+                        <p>App: Tipos de Seguros</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/3.jpg" alt="Proyecto">
+                        <p>App: Buscador de Autos</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/4.jpg" alt="Proyecto">
+                        <p>Página Web: Black Grade</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/5.jpg" alt="Proyecto">
+                        <p>App: Gif Expert App</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/6.jpg" alt="Proyecto">
+                        <p>App: Simulando Envío de E-Mails</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/7.jpg" alt="Proyecto">
+                        <p>App: Simulando Carrito de Compras</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/carrusel/8.jpg" alt="Proyecto">
+                        <p>Página Web: Informativa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyectos--indicadores"></div>
+        </div>
+        <div class="button">
+            <i class="fas fa-archway fa-2x"></i>
+            <p>Contacto</p>
+        </div>
         <div class="iconos">
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-js fa-2x"></i>
+            <i class="fab fa-sass fa-2x"></i>
+            <i class="fab fa-node fa-2x"></i>
+            <i class="fab fa-gulp fa-2x"></i>
+        </div>
+        <div class="cuadro--der">
             <i class="fab fa-linkedin fa-2x"></i>
             <i class="fab fa-github fa-2x"></i>
-
         </div>
     </div>
+    
+    <div class="wrapper">
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="./build/js/bundle.min.js"></script>
 </body>
 </html>
